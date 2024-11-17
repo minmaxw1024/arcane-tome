@@ -5,7 +5,10 @@ import PostCard from "@/components/PostCard.tsx";
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
-    const posts = await getPosts();
+    const lang = _req.headers.get("accept-language");
+    const language = (lang ?? "").split(",")[0];
+
+    const posts = await getPosts(language === "zh-CN" ? "zh-CN" : "en-US");
     return ctx.render(posts);
   },
 };
