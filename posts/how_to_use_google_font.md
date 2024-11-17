@@ -23,13 +23,13 @@ The benefits of using Google Font are:
 Go to [Google Fonts](https://fonts.google.com/?preview.text=Arcane%20Tome).
 Type what you want to display in the textarea, and find the font you like. For example, I choose [Grenze](https://fonts.google.com/?preview.text=Arcane%20Tome&query=Grenze). It's a serif font, a little vintage style, I think it's suitable for my blog.
 
-![google front](/static/posts//google_font_01.png)
+![google front](/static/posts/google_font_01.png)
 
 ### Step 2: Add the font to your project
 
 Click the "Get font" button, and select "Get embed code". You can select what styles do you want to use, and copy the code. In my fresh project, I put the codes in `_layout.tsx` like this:
 
-![google front](/static/posts//google_font_02.png)
+![google front](/static/posts/google_font_02.png)
 
 ```tsx
 import { type PageProps } from "$fresh/server.ts";
