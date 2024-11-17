@@ -5,7 +5,7 @@ export default function Layout({ Component, state }: PageProps) {
   return (
     <div class="layout bg-base-100">
       <Topbar />
-      <div class="pt-16">
+      <div class="pt-[70px] box-border">
         <Component />
       </div>
     </div>

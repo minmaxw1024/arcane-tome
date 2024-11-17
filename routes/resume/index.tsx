@@ -12,11 +12,11 @@ function Resume() {
       value: "linkedin.com/in/maxwellwang-dev",
       icon: "/sns_linkedin.png",
     },
-    {
-      id: "phone",
-      value: "778-990-0190",
-      icon: "/phone.png",
-    },
+    // {
+    //   id: "phone",
+    //   value: "778-990-0190",
+    //   icon: "/phone.png",
+    // },
     {
       id: "address",
       value: "New Westminster, BC",
