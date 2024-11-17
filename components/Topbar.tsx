@@ -1,8 +1,10 @@
 function Link({ href, children }: { href: string; children: any }) {
+  // open in new tab if external link
   return (
     <a
       class="cursor-pointer"
       href={href}
+      target={href.startsWith("http") ? "_blank" : "_self"}
     >
       {children}
     </a>
