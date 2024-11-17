@@ -5,9 +5,19 @@ export default function Layout({ Component, state }: PageProps) {
   return (
     <div class="layout bg-base-100">
       <Topbar />
-      <div class="pt-[70px] box-border">
+      <div class="py-[70px] box-border">
         <Component />
       </div>
+      <footer class="fixed bottom-0 left-0 right-0 flex items-center justify-center text-base-content bg-white py-3">
+        <a href="https://fresh.deno.dev">
+          <img
+            width="197"
+            height="37"
+            src="https://fresh.deno.dev/fresh-badge.svg"
+            alt="Made with Fresh"
+          />
+        </a>
+      </footer>
     </div>
   );
 }
