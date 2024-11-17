@@ -19,9 +19,13 @@ export default function Topbar() {
   return (
     <div class="top-0 z-50 fixed w-full bg-primary text-primary-content">
       <div class="container mx-auto flex items-center justify-between text-white p-4">
-        <a class="text-2xl font-bold" href="/">Arcane Tome</a>
+        <a class="text-3xl font-bold font-grenze" href="/">Arcane Tome</a>
         <div class="flex items-center space-x-4">
-          {links.map((link) => <Link href={link.href}>{link.text}</Link>)}
+          {links.map((link) => (
+            <Link href={link.href}>
+              <span class="font-grenze text-base">{link.text}</span>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

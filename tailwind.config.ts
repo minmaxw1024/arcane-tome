@@ -9,6 +9,13 @@ export default {
     // @ts-expect-error
     daisyui,
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        grenze: ["Grenze", "sans-serif"],
+      },
+    },
+  },
   daisyui: {
     themes: [
       "emerald",
