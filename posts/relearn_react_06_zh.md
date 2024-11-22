@@ -1,7 +1,7 @@
 ---
-标题：重新学习 React 06
-发布时间：2024-11-19T15:00:00.000Z
-简介：从 react.dev 重新学习 React
+title: 重新学习 React 06
+published_at: 2024-11-19T15:00:00.000Z
+snippet: 从 react.dev 重新学习 React
 ---
 
 ## 来自 "State：组件的记忆"
