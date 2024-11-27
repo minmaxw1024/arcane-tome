@@ -119,7 +119,7 @@ function Resume() {
   };
 
   return (
-    <article class="flex flex-col bg-white px-11 py-11 relative box-border">
+    <article class="flex flex-col bg-white px-11 py-11 relative box-border font-alegreya">
       <section class="flex flex-col mb-4">
         <h1 class="text-4xl font-bold mb-2 font-resume">MAXWELL WANG</h1>
         <p class="text-base text-slate-700 mb-2">Front End Engineer</p>
@@ -140,7 +140,7 @@ function Resume() {
                 {info.id === "email" && (
                   <a
                     href={`mailto:${info.value}`}
-                    class="text-secondary text-xs"
+                    class="text-neutral-content text-xs underline"
                   >
                     {info.value}
                   </a>
@@ -151,7 +151,7 @@ function Resume() {
                 {info.id === "linkedin" && (
                   <a
                     href={`https://${info.value}`}
-                    class="text-secondary text-xs"
+                    class="text-neutral-content text-xs underline"
                   >
                     {info.value}
                   </a>
@@ -166,7 +166,7 @@ function Resume() {
       </section>
       <section class="flex flex-col mb-4 max-w-[1200px]">
         <h2 class="text-2xl font-bold mb-2">PROFILE</h2>
-        <div class="w-24 h-[2px] bg-[#0C359E] round-[1px] mb-2"></div>
+        <div class="w-24 h-[2px] bg-secondary round-[1px] mb-2"></div>
         <p class="text-sm">
           A highly experienced and driven software engineer with over nine years
           of expertise in developing modern websites and iOS applications. Known
@@ -177,13 +177,13 @@ function Resume() {
       </section>
       <section class="flex flex-col mb-4">
         <h2 class="text-2xl font-bold mb-2">SKILLS</h2>
-        <div class="w-20 h-[2px] bg-[#0C359E] round-[1px] mb-2"></div>
+        <div class="w-20 h-[2px] bg-secondary round-[1px] mb-2"></div>
         <h3 class="text-lg font-semibold mb-1 font-resume">Languages</h3>
         <div class="flex flex-row items-center mb-1 flex-wrap">
           {languages.map((language) => (
             <div
               key={language}
-              class="flex flex-row items-center py-1 px-2 bg-[#0C359E] mr-3 mb-1 rounded-sm"
+              class="flex flex-row items-center py-1 px-2 bg-secondary mr-3 mb-1 rounded-sm"
             >
               <span class="text-xs text-[#F6F5F5] font-normal">
                 {language}
@@ -198,7 +198,7 @@ function Resume() {
           {frameworks.map((framework) => (
             <div
               key={framework}
-              class="flex flex-row items-center py-1 px-2 bg-[#0C359E] mr-3 mb-1 rounded-sm"
+              class="flex flex-row items-center py-1 px-2 bg-secondary mr-3 mb-1 rounded-sm"
             >
               <span class="text-xs text-[#F6F5F5] font-normal">
                 {framework}
@@ -213,7 +213,7 @@ function Resume() {
           {additionalSkills.map((skill) => (
             <div
               key={skill}
-              class="flex flex-row items-center py-1 px-2 bg-[#0C359E] mr-3 mb-1 rounded-sm"
+              class="flex flex-row items-center py-1 px-2 bg-secondary mr-3 mb-1 rounded-sm"
             >
               <span class="text-xs text-[#F6F5F5] font-normal">
                 {skill}
@@ -227,7 +227,7 @@ function Resume() {
             {tools.map((tool) => (
               <div
                 key={tool}
-                class="flex flex-row items-center py-1 px-2 bg-[#0C359E] mr-3 mb-1"
+                class="flex flex-row items-center py-1 px-2 bg-secondary mr-3 mb-1"
               >
                 <span class="text-xs text-slate-600 font-normal">{tool}</span>
               </div>
@@ -237,7 +237,7 @@ function Resume() {
       </section>
       <section class="max-w-[1200px]">
         <h2 class="text-2xl font-bold mb-2">EXPERIENCES</h2>
-        <div class="w-36 h-[2px] bg-[#0C359E] round-[1px] mb-2 first:print:break-before-page">
+        <div class="w-36 h-[2px] bg-secondary round-[1px] mb-2 first:print:break-before-page">
         </div>
         {experiences.map((experience) => (
           <div key={experience.company} class="flex flex-col mb-2">
@@ -250,7 +250,7 @@ function Resume() {
                 ? (
                   <a
                     href={experience.link}
-                    class="text-sm text-[#d64db4] mr-2 cursor-pointer"
+                    class="text-sm text-accent mr-2 cursor-pointer"
                   >
                     {experience.company}
                   </a>
@@ -274,7 +274,7 @@ function Resume() {
       </section>
       <section class="flex flex-col">
         <h2 class="text-2xl font-bold mb-2">EDUCATION</h2>
-        <div class="w-20 h-[2px] bg-[#0C359E] round-[1px] mb-2"></div>
+        <div class="w-20 h-[2px] bg-secondary round-[1px] mb-2"></div>
         <h3 class="font-semibold text-base font-resume">
           {education.title}
         </h3>
