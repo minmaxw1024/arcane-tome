@@ -1,7 +1,7 @@
 ---
 title: Relearn React 10
 published_at: 2024-11-25T15:00:00.000Z
-snippet: Relearning React from react.dev
+snippet: Relearning React from react.dev, yes, arrays.
 ---
 
 ## From "Updating Arrays in State"

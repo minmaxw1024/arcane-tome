@@ -1,7 +1,8 @@
 import { Handlers } from "$fresh/server.ts";
 import { PageProps } from "$fresh/server.ts";
 import { getPosts, Post } from "@/utils/posts.ts";
-import PostCard from "@/components/PostCard.tsx";
+import PostListView from "@/components/PostsList.tsx";
+import MyIntroduce from "@/components/MyIntroduce.tsx";
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
@@ -17,11 +18,9 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
   const posts = props.data;
   return (
     <main class="max-w-screen-md px-4 mx-auto">
-      <div class="flex md:flex-row flex-col items-center md:items-start justify-start md:justify-between">
-        <img class="w-56 h-56" alt="dino" src="/my-dino.png" />
-        <div class="my-8">
-          {posts.map((post) => <PostCard post={post} />)}
-        </div>
+      <div class="flex flex-col items-center md:items-start justify-start md:justify-between">
+        <MyIntroduce />
+        <PostListView posts={posts} />
       </div>
     </main>
   );

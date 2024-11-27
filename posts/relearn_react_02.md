@@ -1,7 +1,7 @@
 ---
 title: Relearn React 02
 published_at: 2024-11-14T15:00:00.000Z
-snippet: Relearning React from react.dev
+snippet: Relearning React from react.dev, from "Writing Markup with JSX"
 ---
 
 ## From "Writing Markup with JSX"

@@ -1,7 +1,7 @@
 ---
-title: Relearn React 07
+title: Relearn React 08
 published_at: 2024-11-20T15:00:00.000Z
-snippet: Relearning React from react.dev
+snippet: Relearning React from react.dev, batching state updates.
 ---
 
 ## From "Queueing a Series of State Updates"

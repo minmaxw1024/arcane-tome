@@ -8,7 +8,7 @@ export default function Layout({ Component, state }: PageProps) {
       <div class="py-[70px] box-border">
         <Component />
       </div>
-      <footer class="fixed bottom-0 left-0 right-0 flex items-center justify-center text-base-content bg-white py-3">
+      <footer class="fixed bottom-0 left-0 right-0 flex items-center justify-center text-base-content bg-neutral py-3 box-border">
         <a href="https://fresh.deno.dev">
           <img
             width="197"

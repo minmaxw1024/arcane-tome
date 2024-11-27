@@ -13,6 +13,7 @@ export default {
     extend: {
       fontFamily: {
         grenze: ["Grenze", "sans-serif"],
+        alegreya: ["Alegreya", "serif"],
       },
     },
   },

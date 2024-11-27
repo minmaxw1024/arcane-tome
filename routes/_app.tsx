@@ -12,6 +12,11 @@ export default function App({ Component }: PageProps) {
           rel="stylesheet"
         >
         </link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet"
+        >
+        </link>
       </head>
       <body>
         <Component />

@@ -1,7 +1,7 @@
 ---
 title: Relearn React 09
 published_at: 2024-11-22T15:00:00.000Z
-snippet: Relearning React from react.dev
+snippet: Relearning React from react.dev, why does the author explain how to update objects in the whole chapter?
 ---
 
 ## From "Updating Objects in State"

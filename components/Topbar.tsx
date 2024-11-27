@@ -19,7 +19,7 @@ export default function Topbar() {
   ];
 
   return (
-    <div class="top-0 z-50 fixed w-full bg-primary text-primary-content">
+    <div class="top-0 z-50 fixed w-full bg-neutral text-primary-content">
       <div class="container mx-auto flex items-center justify-between text-white p-4">
         <a class="text-3xl font-bold font-grenze" href="/">Arcane Tome</a>
         <div class="flex items-center space-x-4">

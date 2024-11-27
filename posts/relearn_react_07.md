@@ -1,7 +1,7 @@
 ---
 title: Relearn React 07
 published_at: 2024-11-20T15:00:00.000Z
-snippet: Relearning React from react.dev
+snippet: Relearning React from react.dev, is state a snapshot?
 ---
 
 ## From "State as a Snapshot"
