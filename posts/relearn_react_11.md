@@ -1,7 +1,7 @@
 ---
 title: Relearn React 11
 published_at: 2024-11-26T15:00:00.000Z
-snippet: Relearning React from react.dev, yes, arrays.
+snippet: How to handle input state.
 ---
 
 ## From "Reacting to Input with State"

@@ -8,7 +8,7 @@ snippet: Relearning React from react.dev, yes, arrays.
 
 ### Principles of structuring state
 
-#### Group related state.
+#### Group related state
 
 ```jsx
 // Bad
@@ -46,6 +46,9 @@ const canVote = age >= 18;
 
 #### Avoid duplication in state
 
+For UI patterns like selection, keep ID or index in state instead of the object itself.
+Don’t put props into state unless you specifically want to prevent updates.
+
 ```jsx
 // BAD: Duplicated state
 const [cart, setCart] = useState([
@@ -61,6 +64,8 @@ const [cart, setCart] = useState([
 ```
 
 #### Avoid deeply nested state
+
+If updating deeply nested state is complicated, try flattening it.
 
 ```jsx
 
@@ -92,6 +97,27 @@ Directly mutating an state object didn't trigger a re-render. The better way is 
 
 ## Deep Dive
 
+### Don't mirror props in state
+
+In this case, the `color` state is redundant. It initialzied with the first value of `messageColor` for the first render, but it won't update when `messageColor` changes.
+
+And it's a better practice to use `initialState` as the name of props to initialize the state.
+
+```jsx
+// Bad
+function Message({ messageColor }) {
+  const [color, setColor] = useState(messageColor);
+}
+
+// Better
+function Message({ messageColor: initialState }) {
+  const [color, setColor] = useState(initialState);
+}
+```
+
+### Imrpoving memory usage
+
+Using 'immer' to update complex state can improve memory usage.
 
 ## References
 
