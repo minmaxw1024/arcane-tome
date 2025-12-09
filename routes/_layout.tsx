@@ -1,4 +1,4 @@
-import { PageProps } from "$fresh/server.ts";
+import { PageProps } from "fresh";
 import Topbar from "@/components/Topbar.tsx";
 
 export default function Layout({ Component, state }: PageProps) {

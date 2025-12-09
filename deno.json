@@ -1,44 +1,28 @@
 {
-  "lock": false,
   "tasks": {
-    "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
-    "cli": "echo \"import '\\$fresh/src/dev/cli.ts'\" | deno run --unstable -A -",
-    "manifest": "deno task cli manifest $(pwd)",
-    "start": "deno run -A --watch=static/,routes/ dev.ts",
-    "build": "deno run -A dev.ts build",
-    "preview": "deno run -A main.ts",
-    "update": "deno run -A -r https://fresh.deno.dev/update ."
+    "check": "deno fmt --check && deno lint && deno check",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "deno serve -A _fresh/server.js",
+    "update": "deno run -A -r jsr:@fresh/update ."
   },
-  "lint": {
-    "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
-    }
-  },
-  "exclude": [
-    "**/_fresh/*"
-  ],
+  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
+  "exclude": ["**/_fresh/*"],
   "imports": {
-    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
     "@deno/gfm": "jsr:@deno/gfm@^0.10.0",
     "@std/encoding": "jsr:@std/encoding@^1.0.5",
     "@std/front-matter": "jsr:@std/front-matter@^1.0.5",
-    "preact": "https://esm.sh/preact@10.22.0",
+    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.17",
+    "preact": "npm:preact@^10.28.0",
     "preact/": "https://esm.sh/preact@10.22.0/",
-    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
-    "tailwindcss": "npm:tailwindcss@3.4.1",
-    "tailwindcss/": "npm:/tailwindcss@3.4.1/",
-    "tailwindcss/plugin": "npm:/tailwindcss@3.4.1/plugin.js",
-    "daisyui" : "npm:daisyui@4.12.14",
+    "@preact/signals": "npm:@preact/signals@^2.5.0",
+    "daisyui": "npm:daisyui@^5.5.8",
     "$std/": "https://deno.land/std@0.216.0/",
-    "@/": "./"
+    "@/": "./",
+    "fresh": "jsr:@fresh/core@^2.2.0",
+    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite",
+    "vite": "npm:vite"
   },
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact"
-  },
+  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
   "nodeModulesDir": "auto"
 }
