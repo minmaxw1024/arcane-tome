@@ -23,7 +23,7 @@ function Resume() {
       icon: "/map.png",
     },
   ];
-  const languages = ["TypeScript", "JavaScript", "HTML", "CSS"];
+  const languages = ["TypeScript", "JavaScript", "Python", "Golang", "HTML", "CSS"];
 
   const frameworks = [
     "React",
@@ -40,8 +40,8 @@ function Resume() {
 
   const additionalSkills = [
     "React Native",
+    "Golang",
     "Swift",
-    "Objective-C",
     "PHP/Yii",
     "SQL",
     "Docker",
@@ -51,7 +51,7 @@ function Resume() {
 
   const experiences = [
     {
-      job: "Front End Engineer",
+      job: "Software Engineer",
       address: "Vancouver, British Columbia, Canada",
       company: "Deepcoin",
       link: "https://www.deepcoin.com",
@@ -59,6 +59,9 @@ function Resume() {
       descriptions: [
         "Developed responsive, high-quality UI/UX implementations using React.js and Vue.js for both mobile and desktop platforms.",
         "Built and deployed three B2B ReactJS projects with Server-Side Rendering (SSR) using TypeScript, Next.js, TailwindCSS, and Node.js, enhancing user experience and performance.",
+        "Architected and developed a full-stack headless CMS from scratch, implementing both frontend and backend systems to enable flexible content management across multiple platforms.",
+        "Built a customer service quality check system frontend, improving service monitoring and evaluation processes for the support team.",
+        "Developed an AI chatbot feedback system integrating Dify and Langfuse, enabling comprehensive tracking and analysis of AI-generated responses to improve chatbot performance.",
         "Created reusable React components and hooks, reducing development time by 30% in future projects.",
         "Revamped the company's front-end infrastructure, redesigning the CLI, Node.js packaging scripts, and development toolchain from the ground up.",
         "Developed over three web crawlers using NodeJS and Cheerio, providing real-time crypto news to support our AI application.",

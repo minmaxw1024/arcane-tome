@@ -7,7 +7,7 @@ function MyIntroduce() {
       <p class="text-3xl font-medium mt-4 font-grenze">Hi, I'm Maxwell Wang.</p>
       <p class="text-2xl font-alegreya">
         I'm a software engineer and I love to build things. I'm currently
-        working for a fintech company as a front-end engineer.
+        working for a Fintech company as a software engineer.
       </p>
     </div>
   );
